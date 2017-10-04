@@ -1,0 +1,39 @@
+body{
+			margin-top: 100px;
+			font-family: 'Trebuchet MS', serif;
+			line-height: 1.6
+}
+
+
+
+.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.tabs li{
+	background-color: none;
+	color: #222;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.tabs li.current{
+	background: #ededed;
+	color: #222;
+}
+
+.tab-content{
+	display: none;
+	background-color: #ededed;
+
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+.music-player {
+	background-color: #ededed;
+	padding: 10px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <access origin="http://code.jquery.com" subdomains="true" />
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- Include the jQuery Mobile library -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+  <script src="js/player.js"></script>
+
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+
+  <div data-role="header">
+
+    <h1>ARC</h1>
+
+    <div data-role="navbar">
+
+      <ul class="tabs">
+        <li class="tab-link current" data-tab="tab-1" ><a href="#" class="ui-btn-active">Music</a></li>
+        <li class="tab-link" data-tab="tab-2"><a href="#">Videos</a></li>
+        <li class="tab-link" data-tab="tab-3"><a href="#">Playlist</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div data-role="main" class="ui-content">
+
+      
+    <div id="tab-1" class="tab-content current">
+      <ul id="playlist" data-role="listview" data-filter="true" data-filter-placeholder="Search ..." data-inset="true" data-autodividers="true">
+        <li><a href="pages/music1.html">
+            <img src="images/TheColourAndTheShape.jpg">
+            <h2>Everlong</h2>
+            <p>Foo Fighters</p></a>
+        </li>
+        <li><a href="pages/music2.html">
+            <img src="images/inutero.jpg">
+            <h2>Heart Shaped Box</h2>
+            <p>Nirvana</p></a>
+        </li>
+        <li><a href="pages/music3.html">
+            <img src="images/Metallica.jpg">
+            <h2>Nothing Else Matters</h2>
+            <p>Metallica</p></a>
+        </li>
+        <li><a href="pages/music4.html">
+            <img src="images/Stadiumarcadium.jpg">
+            <h2>Snow (Hey Oh)</h2>
+            <p>Red Hot Chili Peppers</p></a>
+        </li>
+        <li><a href="pages/music5.html">
+            <img src="images/Sublime.jpg">
+            <h2>What I Got</h2>
+            <p>Sublime</p></a>
+        </li>
+        <li><a href="pages/music6.html">
+            <img src="images/Dookie.jpg">
+            <h2>When I Come Around</h2>
+            <p>Greenday</p></a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="tab-2" class="tab-content">
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="Search ..." data-inset="true" data-autodividers="true">
+        <li><a href="pages/video2.html">
+            <img src="images/banshee.jpg" width="310" height="310">
+            <h2>Banshee</h2>
+            </a>
+        </li>
+        <li><a href="pages/video1.html">
+            <img src="images/deadpool.jpg" width="310" height="310">
+            <h2>Deadpool</h2>
+            </a>
+        </li>
+        <li><a href="pages/video3.html">
+            <img src="images/got.jpg">
+            <h2>Game of Thrones</h2>
+            </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="tab-3" class="tab-content">
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="Search ..." data-inset="true" data-autodividers="true">
+        <li><a href="pages/playlist1.html">
+            <h2>Favorite Songs</h2>
+            </a>
+        </li>
+        <li><a href="pages/playlist3.html">
+            <h2>Movies</h2>
+            </a>
+        </li>
+        <li><a href="pages/playlist2.html">
+            <h2>TV Shows</h2>
+            </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>

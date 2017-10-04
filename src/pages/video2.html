@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <access origin="http://code.jquery.com" subdomains="true" />
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- Include the jQuery Mobile library -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <script src="../js/scripts.js"></script>
+  <script src="../js/player.js"></script>
+
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+
+  <div data-role="header">
+
+    <a data-icon="back" data-rel= "back" back-btn="true">Back</a>
+    <h1>ARC</h1>
+
+  </div>
+
+  <div data-role="main" class="ui-content">
+
+      
+    <div class="music-player container">
+            <center>
+
+              <div class="info-wrapper" style="padding:10px;">
+                <h2 id="title" style="margin-bottom: -10px; text-align: left">Banshee</h2>
+              </div>
+
+               <iframe width="315" height="315" src="https://www.youtube.com/embed/jqRPaucl8r4?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+              <br/><br/>
+
+              <fieldset data-role="collapsible">
+                  <legend>Edit</legend>
+
+                  <form>
+                    <label for="textinput-f">Edit Information</label>
+
+                    <input id="newtitle" placeholder="Title" value="" type="text">
+                  </form>
+              </fieldset>
+              <button onclick="editVid()">Save</button>
+              
+            </center>
+    </div>
+
+  </div>
+
+</body>
+</html>

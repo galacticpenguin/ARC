@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <access origin="http://code.jquery.com" subdomains="true" />
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- Include the jQuery Mobile library -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <script src="../js/scripts.js"></script>
+  <script src="../js/player.js"></script>
+
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+
+  <div data-role="header">
+
+    <a href="../index.html" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-left">Back</a>
+    <h1>ARC</h1>
+
+  </div>
+
+  <div data-role="main" class="ui-content">
+
+      
+    <div class="music-player container">
+            <center>
+              <img src="../images/Sublime.jpg"></img>
+
+              <div class="info-wrapper" style="padding:10px;">
+                <h2 id="title" style="margin-bottom: -10px; text-align: left">What I Got</h2>
+                <p id="artist" style="text-align:left;">Sublime</p>
+              </div>
+
+              <audio controls autoplay id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg" >
+                  <source type="audio/mp3" src="../music/whatigot.mp3">
+                  Sorry, your browser does not support HTML5 audio.
+              </audio>
+
+              <div class="ui-nodisc-icon">
+                  <a href="music4.html" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+                  <a href="music6.html" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+              </div>      
+
+              <br/><br/>
+
+              <fieldset data-role="collapsible">
+                  <legend>Edit</legend>
+
+                  <form>
+                    <label for="textinput-f">Edit Information</label>
+
+                    <input id="newtitle" placeholder="Title" value="" type="text">
+                    <input id="newartist" placeholder="Artist" value="" type="text">
+                  </form>
+              </fieldset>
+              <button onclick="edit()">Save</button>
+              
+            </center>
+    </div>
+
+  </div>
+
+</body>
+</html>
